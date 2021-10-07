@@ -5,6 +5,7 @@
 	 background: #2c104b;  /* fallback for old browsers */
 
 	background-image: url(./bg-design.png);
+	 background-repeat:no-repeat;
     background-size: cover;
 	 overflow-x: hidden;
 	 display: grid;
