@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+ body {
+	 min-height: 100vh;
+	 margin: 0;
+	 background: #41295a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	
+	 overflow-x: hidden;
+	 display: grid;
+	 place-items: center;
+}
+.gallery-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery-header p{
+    font-size: 10vh;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+    padding: 0 0 50px 0;
+    color: #ffaee7;
+    text-align: center;
+    margin-top: -60px;
+  }
+
+ a {
+	 text-decoration: none;
+	 color: #9ca0b1;
+}
+ .wrapper {
+     width: 50vh;
+     border-radius: 10%;
+     background: #0f0c29;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .wrapper h1 {
+	 color: #fff;
+	 font-size: 9vh;
+	 text-transform: uppercase;
+	 font-weight: 700;
+	 font-family: 'Cinzel Decorative', cursive;
+	 background: linear-gradient(to right, #f8413a 10%, #25abe8 50%, #57d75b 60%);
+	 background-size: auto auto;
+	 background-clip: border-box;
+	 background-size: 200% auto;
+	 color: #fff;
+	 background-clip: text;
+	 text-fill-color: transparent;
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 animation: textclip 1.5s linear infinite;
+     
+	 display: inline-block;
+}
+ @keyframes textclip {
+	 to {
+		 background-position: 200% center;
+	}
+}
+ 
+
+
+/* diamond shape */
+.glow {
+	width: fit-content;
+	box-shadow: 1px 1px 0 #1D8758, 0 0 20px 5px #C0FFE4, inset 2px 2px 0 #D3FFEC;
+	animation: glow 2s infinite ease;
+}
+.glow:before,
+.glow:after {
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+.glow:after {
+	left: 0;
+	width: 4px;
+	height: 48px;
+	background: #fff;
+	z-index: 5;
+	animation: sheen 5s infinite;
+}
+
+/* animates box shadow glow effect */
+@keyframes glow {
+	0%,100% {
+		box-shadow: 1px 1px #1D8758, 0 0 20px 5px #8FFFCF, inset 2px 2px #D3FFEC;
+	}
+	50% {
+		box-shadow: 1px 1px #1D8758, 0 0 16px 8px #8FFFCF, inset 2px 2px #D3FFEC;
+	}
+}
