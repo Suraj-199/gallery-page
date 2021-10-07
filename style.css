@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
  body {
-	 min-height: 100vh;
+	 
 	 margin: 0;
 	 background: #2c104b;  /* fallback for old browsers */
 
@@ -139,5 +139,8 @@
     body{
         background-image: none;
     }
+	 .gallery-header p{
+		 font-size:8vh;
+	}
 
 }
